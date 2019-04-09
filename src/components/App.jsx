@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
 import AddGoal from './AddGoal';
 import GoalList from './GoalList';
 import CompleteGoalList from './CompleteGoalList';
@@ -8,14 +6,14 @@ import CompleteGoalList from './CompleteGoalList';
 class App extends Component {
   render() {
     return(
-      <div>
+      <div className="container">
         <h3>Add Goal</h3>
         <AddGoal />
-        <br />
-        <h3>Goal List</h3>
+        <hr />
+        <h3>Goals List</h3>
         <GoalList />
         <hr />
-        <h3>Complete Goal List</h3>
+        <h3>Complete Goals List</h3>
         <CompleteGoalList />
       </div>
     )

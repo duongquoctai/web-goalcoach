@@ -4,7 +4,7 @@ import goals from './reducer_goals';
 import completeGoals from './reducer_complete_goals';
 
 export default combineReducers({
-	user,
-	goals,
-	completeGoals
+  user,
+  goals,
+  completeGoals
 })
