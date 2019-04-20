@@ -6,8 +6,8 @@ class SignIn extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
-      password: '',
+      email: 'demo@demo.com',
+      password: 'demo@demo.com',
       error: {
         message: ''
       }
@@ -31,6 +31,7 @@ class SignIn extends Component {
             <input
               className="form-control"
               type="text"
+              value={this.state.email}
               style={{marginRight: '5px'}}
               placeholder="email"
               onChange={event => this.setState({email: event.target.value})}
@@ -38,6 +39,7 @@ class SignIn extends Component {
             <input
               className="form-control"
               type="password"
+              value={this.state.value}
               style={{marginRight: '5px'}}
               placeholder="password"
               onChange={event => this.setState({password: event.target.value})}
