@@ -39,7 +39,7 @@ class SignIn extends Component {
             <input
               className="form-control"
               type="password"
-              value={this.state.value}
+              value={this.state.password}
               style={{marginRight: '5px'}}
               placeholder="password"
               onChange={event => this.setState({password: event.target.value})}
